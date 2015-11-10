@@ -41,8 +41,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
 ul, li, div, article, nav, header, section {
-  border: 1px solid cyan;
   box-sizing: border-box; }
 
 .transition, nav ul li a, nav ul li a:hover {
@@ -56,7 +61,8 @@ h1 {
   text-transform: uppercase; }
 
 body {
-  font-family: "Source Sans Pro", sans-serif; }
+  font-family: "Source Sans Pro", sans-serif;
+  background: #3a3345; }
 
 div, article {
   box-sizing: border-box; }
@@ -75,15 +81,9 @@ header {
   background-position-y: -200px; }
 
 nav {
-  position: relative;
-  height: 100%; }
-  nav .container {
-    height: 100%;
-    display: table; }
-    nav .container .col-lg-12 {
-      vertical-align: middle;
-      display: table-cell;
-      transform: translatey(40%); }
+  top: 70%;
+  transform: translateY(-30%);
+  position: relative; }
   nav ul {
     text-align: center;
     padding-bottom: 10px;
@@ -107,10 +107,88 @@ nav {
           color: #df133f; }
 
 .bio {
-  padding: 50px 0; }
+  padding: 80px 0;
+  background: #262524;
+  color: white; }
+  .bio h1 {
+    background-color: #dd3154;
+    margin-bottom: 20px;
+    color: #262524;
+    display: inline-block;
+    padding: 0 10px;
+    letter-spacing: -2px; }
+  .bio p {
+    font-size: 13px;
+    line-height: 25px; }
   .bio .bio-panel {
     width: 33.3%;
     padding: 20px;
     display: inline-block; }
+
+.gallery {
+  padding: 80px 0;
+  background: #3a3345; }
+  .gallery h1 {
+    color: #dd3154;
+    margin-bottom: 20px;
+    background: #262524;
+    display: inline-block;
+    padding: 0 10px;
+    letter-spacing: -2px; }
+  .gallery .canvas {
+    background: #404241;
+    margin-bottom: 30px; }
+    .gallery .canvas .nombre {
+      padding: 10px; }
+    .gallery .canvas h2 {
+      font-size: 26px;
+      letter-spacing: -1px;
+      text-transform: initial;
+      color: white;
+      margin: 10px 0; }
+    .gallery .canvas p {
+      margin-top: 5px;
+      font-size: 13px;
+      line-height: 17px;
+      color: white; }
+      .gallery .canvas p strong {
+        color: #333;
+        background: rgba(255, 255, 255, 0.5);
+        padding: 0 5px;
+        margin-right: 5px; }
+
+.taller {
+  padding: 80px 0;
+  background: #df133f;
+  color: white; }
+
+.contacto {
+  padding-bottom: 80px;
+  background: #262524; }
+  .contacto h1 {
+    text-align: center;
+    margin-bottom: 40px; }
+  .contacto input {
+    background: #3c4755;
+    border: none;
+    color: white; }
+  .contacto .map {
+    margin-bottom: 80px; }
+  .contacto label {
+    margin-bottom: 10px;
+    color: white; }
+  .contacto textarea {
+    height: 109px;
+    margin-bottom: 43px;
+    background: #3c4755;
+    border: none;
+    color: white; }
+  .contacto .btn-default {
+    border: none;
+    background: #DD3154;
+    color: white; }
+
+.scrolloff {
+  pointer-events: none; }
 
 /*# sourceMappingURL=style.css.map */

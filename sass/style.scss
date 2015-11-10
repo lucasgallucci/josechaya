@@ -7,8 +7,16 @@ $title-font: 'Crimson Text', serif;
 $main-color:#df133f;
 $gris: #3c4755; 
 
+
+html {
+  font-size: 100%; 
+  overflow-y: scroll; 
+  -webkit-text-size-adjust: 100%; 
+  -ms-text-size-adjust: 100%;
+}
+
 ul,li,div,article,nav,header,section{
-	border: 1px solid cyan;
+	//border: 1px solid cyan;
 	box-sizing:border-box;
 }
 
@@ -27,6 +35,7 @@ h1{
 
 body{
 	font-family:$main-font;
+	background:#3a3345;
 }
 
 div,article{
@@ -47,21 +56,15 @@ header{
 	background:url("../img/back.jpg");
 	background-size: cover;
     background-position-y: -200px;
+    .container{
+
+    }
 }
 
 nav{ 
-	.container{
-		height: 100%;
-		display: table;
-		.col-lg-12{
-
-			vertical-align: middle;
-			display: table-cell;
-			transform:translatey(40%);
-		}
-	}
+	top: 70%;
+  	transform: translateY(-30%);
 	position:relative;
-	height:100%;
 	ul{
 		text-align: center;
 		li{
@@ -96,10 +99,123 @@ nav{
 }
 
 .bio{
-	padding:50px 0;
+	padding:80px 0;
+	background: #262524;
+	color: white;
+
+	h1{
+		background-color: #dd3154;
+		margin-bottom: 20px;
+		color: #262524;
+		display: inline-block;
+		padding: 0 10px;
+		letter-spacing: -2px;
+	}
+
+	p{
+		font-size: 13px;
+		line-height: 25px;
+	}
 	.bio-panel{
 		width: 33.3%;
 		padding:20px;
 		display: inline-block;
 	}
+}
+
+.gallery{
+	padding: 80px 0;
+	background:#3a3345; 
+	h1{	
+		color: #dd3154;
+		margin-bottom: 20px;
+		background: #262524;
+		display: inline-block;
+		padding: 0 10px;
+		letter-spacing: -2px;
+	}
+	.canvas{
+		background: #404241;
+		margin-bottom: 30px;
+		
+		.nombre{
+			padding: 10px;
+		}
+
+		h2{
+			font-size: 26px;
+    		letter-spacing: -1px;
+    		text-transform: initial;
+    		color: white;
+    		margin: 10px 0;
+		}
+
+
+		p{
+			margin-top: 5px;
+    		font-size: 13px;
+    		line-height: 17px;
+    		color: white;
+    		strong{
+    			color: #333;
+    			background: rgba(255,255,255,0.5);
+    			padding: 0 5px;
+    			margin-right: 5px;
+    		}
+		}  
+	}
+}
+
+
+.taller{
+	padding: 80px 0;
+	background:#df133f;
+	color:white;
+}
+
+.contacto{
+	padding-bottom: 80px;
+
+	h1{
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	background:#262524;
+
+	input{
+		background: #3c4755;
+		border:none;
+		color: white;
+	}
+
+	.map{
+		margin-bottom: 80px;
+	}
+
+	label{
+		margin-bottom: 10px;
+		color: white;
+	}
+
+	textarea{
+		height: 109px;
+    	margin-bottom: 43px;
+    	background: #3c4755;
+		border:none;
+		color: white;
+	}
+
+	.btn-default{
+		border: none;
+		background: #DD3154;
+		color: white;
+	}
+}
+
+
+
+
+.scrolloff {
+    pointer-events: none;
 }
