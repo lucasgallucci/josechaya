@@ -7,6 +7,10 @@ $title-font: 'Crimson Text', serif;
 $main-color:#df133f;
 $gris: #3c4755; 
 
+body, html { 
+    overflow-x: hidden; 
+    // overflow-y: auto;
+}
 
 html {
   font-size: 100%; 
