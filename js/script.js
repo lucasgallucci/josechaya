@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  
+
     $('#map').addClass('scrolloff');                // set the mouse events to none when doc is ready
     
     $('#overlay').on("mouseup",function(){          // lock it when mouse up

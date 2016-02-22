@@ -38,49 +38,10 @@ div, article {
   margin: auto; }
 
 header {
-  width: 100%;
-  height: auto;
-  background: url("../img/back.jpg") no-repeat center center;
+  height: 768px;
+  background: url("../img/back.jpg");
   background-size: cover;
-  padding-bottom: 15%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover; }
-
-.navbar_menu {
-  position: relative;
-  background: url("../img/back.jpg") no-repeat center center;
-  background-size: cover;
-  padding-bottom: 15%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover; }
-
-.navbar-default {
-  background-color: transparent; }
-  .navbar-default .navbar-nav {
-    margin-top: 30%;
-    position: absolute;
-    color: white;
-    float: none;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 700px; }
-    .navbar-default .navbar-nav li a {
-      color: white; }
-
-.navbar {
-  border: 1px solid yellow;
-  /* position: relative; */
-  min-height: 50px;
-  margin-bottom: 50%;
-  border: 1px solid transparent; }
-
-.nav li a {
-  display: block;
-  padding: 14px 30px;
-  position: relative; }
+  width: 100%; }
 
 .bio {
   padding: 80px 0;
@@ -133,6 +94,21 @@ header {
         padding: 0 5px;
         margin-right: 5px; }
 
+.view-more {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .view-more .link-flickr {
+    max-width: 50%; }
+    .view-more .link-flickr a {
+      color: white;
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2em; }
+      .view-more .link-flickr a:hover {
+        color: #d00355; }
+
 .taller {
   padding: 80px 0;
   background: #df133f;
@@ -147,24 +123,88 @@ header {
   .contacto input {
     background: #3c4755;
     border: none;
-    color: white; }
+    color: white;
+    border-radius: 0; }
   .contacto .map {
     margin-bottom: 80px; }
   .contacto label {
     margin-bottom: 10px;
     color: white; }
   .contacto textarea {
-    height: 109px;
-    margin-bottom: 43px;
+    border-radius: 0;
+    height: 113px;
+    margin-bottom: 46px;
     background: #3c4755;
     border: none;
     color: white; }
   .contacto .btn-default {
+    border-radius: 0;
     border: none;
     background: #DD3154;
     color: white; }
 
 .scrolloff {
   pointer-events: none; }
+
+.menu {
+  margin-right: 50px;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  padding: 0; }
+  .menu a {
+    position: relative;
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+    color: #fff; }
+    .menu a:hover {
+      color: #d00355; }
+
+@media all and (max-width: 800px) {
+  .menu {
+    flex-grow: 1;
+    justify-content: space-between; } }
+@media all and (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%; } }
+.exhibitions {
+  padding: 80px 0;
+  background: #262524;
+  color: white; }
+  .exhibitions h1 {
+    background-color: #dd3154;
+    margin-bottom: 20px;
+    color: #262524;
+    display: inline-block;
+    padding: 0 10px;
+    letter-spacing: -2px; }
+  .exhibitions article h1 {
+    background: #262524;
+    color: #df133f;
+    font-size: 1.4em; }
+  .exhibitions article a {
+    text-decoration: none;
+    margin-left: 40px; }
+  .exhibitions article p {
+    margin-left: 40px; }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #262524; }
+  footer .div-footer {
+    margin-left: 40px;
+    padding-bottom: 30px; }
+  footer a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px; }
+    footer a:hover {
+      color: #d00355; }
 
 /*# sourceMappingURL=style.css.map */
