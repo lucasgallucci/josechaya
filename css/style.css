@@ -39,6 +39,7 @@ div, article {
 
 header img {
   width: 100%;
+  z-index: -1;
   margin-top: -60px; }
 header nav {
   background-color: transparent; }
@@ -112,7 +113,8 @@ header nav {
 .taller {
   padding: 80px 0;
   background: #df133f;
-  color: white; }
+  color: white;
+  font-size: 24px; }
 
 .contacto {
   padding-bottom: 80px;
@@ -151,6 +153,7 @@ header nav {
   list-style: none;
   padding: 0;
   display: flex;
+  display: fixed;
   align-items: center;
   justify-content: center; }
   .menu a {
@@ -221,5 +224,15 @@ header nav {
         padding-top: 10px; }
         .footer ul li i:hover {
           color: #d00355; }
+
+.hide {
+  display: none; }
+
+.more {
+  cursor: pointer;
+  text-decoration: none; }
+  .more:hover {
+    color: #d00355;
+    text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

@@ -25,6 +25,16 @@ $(document).ready(function () {
 
 	$('.fancybox').fancybox();
 
+  $('.more').click(function() {
+    var j = $(this).html();
+        
+    $(this).prev('div').slideToggle();
+    
+    if (j === 'more')
+      $(this).html('close');
+    else
+      $(this).html('more');
+});
       /*
        *  Different effects
        */
